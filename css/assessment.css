@@ -1,0 +1,43 @@
+body{
+  color: black;
+  background-image: url('../images/back-ground.jpeg');
+}
+
+img{
+   width: 120px; 
+   margin-bottom: 15px; 
+   /*Your code here*/
+   display: block;
+   margin: auto;
+}
+
+h1{
+  text-align: center;
+}
+
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+div{
+   padding: 30px; 
+   margin:5px; 
+   /* YOUR CODE HERE */
+   text-align: center;
+}
+
+@media screen and (min-width: 850px){
+
+  section{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  section div:nth-child(even){
+    border: solid 2px black;
+  }
+  
+
+} 
